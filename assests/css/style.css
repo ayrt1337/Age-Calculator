@@ -1,0 +1,189 @@
+html, body{
+    height: 100%;
+}
+body{
+    background-color: #ccc;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    background-color: white;
+    width: 800px;
+    height: 550px;
+}
+.form{
+    position: relative;
+    width: 75%;
+    display: flex;
+    border-bottom: solid 0.1rem #ccc;
+}
+.form img{
+    margin-left: 95%;
+    margin-top: 19.7%;
+    cursor: pointer;
+    position: absolute;
+    padding: 0.9rem;
+    background-color: black;
+    float: right;
+    border-radius: 100%;
+    transition: 0.2s ease;
+}
+.form img:hover{
+    background-color: blueviolet;
+}
+.form > div{
+    padding-left: 1.8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.form .tittle{
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+}
+.form .tittle.naoValidado{
+    color: red;
+}
+.form .alert.alertNaoMostrar{
+    display: none;
+    padding-top: 0.4rem;
+    font-size: 0.9rem;
+}
+.form .alert.alertMostrar{
+    color:red;
+    padding-top: 0.4rem;
+    font-size: 1rem; 
+}
+.form .date.invalidDateMostrar{
+    color:red;
+    padding-top: 0.4rem;
+    font-size: 1rem; 
+}
+.form .date.invalidDateNaoMostrar{
+    display: none;
+}
+.form .data.dataNaoMostrar{
+   display: none;
+}
+.form .data.dataMostrar{
+    color:red;
+    padding-top: 0.4rem;
+    font-size: 1rem; 
+}
+.form .passado.passado.passadoNaoMostrar{
+    display: none;
+}
+.form .passado.passadoMostrar{
+    color:red;
+    padding-top: 0.4rem;
+    font-size: 1rem; 
+}
+.input{
+    border: solid 2px #ccc;
+    border-radius: 0.4rem;
+    padding-left: 0.8rem;
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+}
+.input:hover{
+    border-color: blueviolet;
+}
+.input:focus{
+    outline-color: blueviolet;
+}
+.input.naoValidado{
+    border: solid 2px red;
+}
+.input.naoValidado:focus{
+    outline-color: red;
+}
+.result{
+    padding: 2rem;
+}
+.result > div{
+    font-weight: bold;
+    font-size: 5.5rem;
+    display: flex;
+}
+.result .resultado{
+    color: blueviolet;
+}
+@media (max-width: 800px){
+    .calculator{
+        width: 500px;
+        height: 570px;
+    }
+    .calculator .result{
+        font-size: 18px;
+    }
+    .form img{
+        margin-left: 95%;
+        margin-top: 34%;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .input{
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+    }
+}
+@media (max-width: 500px){
+    .calculator{
+        width: 400px;
+        height: 500px;
+    }
+    .result > div{
+        font-size: 4.3rem;
+    }
+    .input{
+        width: 5rem;
+        height: 3rem;
+    }
+    .form img{
+        margin-top: 42%;
+        width: 2.7rem;
+        height: 2.7rem;
+        padding: 0.6rem;
+    }
+}
+@media (max-width: 410px){
+    .calculator{
+        width: 300px;
+        height: 420px;
+    }
+    .result{
+        padding: 1.5rem;
+        padding-top: 0.7rem;
+    }
+    .result > div{
+        font-size: 3rem;
+    }
+    .input{
+        width: 4.3rem;
+        height: 3rem;
+        font-size: 1.1rem;
+        padding-left: 0.45rem;
+        
+    }
+    .form .day{
+        padding-left: 1.25rem;
+        
+    }
+    .form img{
+        margin-top: 57%;
+        width: 2.7rem;
+        height: 2.7rem;
+        padding: 0.6rem;
+    }
+}

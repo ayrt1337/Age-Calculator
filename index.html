@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/reset.css">
+    <link rel="shortcut icon" href="./assests/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="form">
+                <img src="./assests/images/icon-arrow.png" alt="" width="70" height="70" id="btn">
+                <div class="day">
+                    <p class="tittle">DAY</p>
+                    <input class="input" type="number" name="dia" id="" placeholder="DD"><br>
+                    <p class="alert alertNaoMostrar">This field is required</p>
+                    <p class="date invalidDateNaoMostrar">Must be a valid day</p>
+                    <p class="data dataNaoMostrar">Must be a valid date</p>
+                    <p class="passado passadoNaoMostrar">Must be in the past</p>
+                </div>
+    
+                <div class="month">
+                    <p class="tittle">MONTH</p>
+                    <input class="input" type="number" name="mes" id="" placeholder="MM">
+                    <p class="alert alertNaoMostrar">This field is required</p>
+                    <p class="date invalidDateNaoMostrar">Must be a valid month</p>
+                </div>
+    
+                <div class="year">
+                    <p class="tittle">YEAR</p>
+                    <input class="input" type="number" name="ano" id="" placeholder="YYYY">
+                    <p class="alert alertNaoMostrar">This field is required</p>
+                    <p class="date invalidDateNaoMostrar">Must be a valid year</p>
+                </div>
+            </div>
+    
+            <div class="result">
+                <div class="result-year">
+                    <p class="resultado year">--</p>&nbsp
+                    <p>years</p>
+                </div>
+    
+                <div class="result-month">
+                    <p class="resultado month">--</p>&nbsp
+                    <p>months</p>
+                </div>
+    
+                <div class="result-day">
+                    <p class="resultado day">--</p>&nbsp
+                    <p>days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/Javascript" src="./assests/js/index.js"></script>
+</body>
+</html>
