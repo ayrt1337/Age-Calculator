@@ -3,6 +3,9 @@ html, body{
 }
 body{
     background-color: #ccc;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -20,7 +23,7 @@ input::-webkit-inner-spin-button {
     border-bottom-right-radius: 150px;
     background-color: white;
     width: 800px;
-    height: 550px;
+    height: 570px;
 }
 .form{
     position: relative;
@@ -43,26 +46,24 @@ input::-webkit-inner-spin-button {
     background-color: blueviolet;
 }
 .form > div{
-    padding-left: 1.8rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
+    margin-left: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 .form .tittle{
-    font-size: 1rem;
-    padding-bottom: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
 }
 .form .tittle.naoValidado{
     color: red;
 }
 .form .alert.alertNaoMostrar{
     display: none;
-    padding-top: 0.4rem;
-    font-size: 0.9rem;
 }
 .form .alert.alertMostrar{
     color:red;
     padding-top: 0.4rem;
-    font-size: 1rem; 
+    font-size: 0.89rem; 
 }
 .form .date.invalidDateMostrar{
     color:red;
@@ -78,7 +79,7 @@ input::-webkit-inner-spin-button {
 .form .data.dataMostrar{
     color:red;
     padding-top: 0.4rem;
-    font-size: 1rem; 
+    font-size: 0.89rem; 
 }
 .form .passado.passado.passadoNaoMostrar{
     display: none;
@@ -86,7 +87,7 @@ input::-webkit-inner-spin-button {
 .form .passado.passadoMostrar{
     color:red;
     padding-top: 0.4rem;
-    font-size: 1rem; 
+    font-size: 0.89rem;  
 }
 .input{
     border: solid 2px #ccc;
@@ -109,10 +110,11 @@ input::-webkit-inner-spin-button {
     outline-color: red;
 }
 .result{
-    padding: 2rem;
+    margin: 2rem;
+    margin-top: 1.3rem;
 }
 .result > div{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 5.5rem;
     display: flex;
 }
@@ -129,7 +131,7 @@ input::-webkit-inner-spin-button {
     }
     .form img{
         margin-left: 95%;
-        margin-top: 34%;
+        margin-top: 35%;
         width: 3.5rem;
         height: 3.5rem;
     }
@@ -151,20 +153,23 @@ input::-webkit-inner-spin-button {
         height: 3rem;
     }
     .form img{
-        margin-top: 42%;
+        margin-top: 43%;
         width: 2.7rem;
         height: 2.7rem;
         padding: 0.6rem;
     }
 }
 @media (max-width: 410px){
+    .form .tittle{
+        font-size: 1rem;
+    }
     .calculator{
         width: 300px;
         height: 420px;
     }
     .result{
-        padding: 1.5rem;
-        padding-top: 0.7rem;
+        margin: 1.5rem;
+        margin-top: 0.7rem;
     }
     .result > div{
         font-size: 3rem;
@@ -176,8 +181,8 @@ input::-webkit-inner-spin-button {
         padding-left: 0.45rem;
         
     }
-    .form .day{
-        padding-left: 1.25rem;
+    .form > div{
+        margin-left: 1.25rem;
         
     }
     .form img{
