@@ -68,7 +68,7 @@ input::-webkit-inner-spin-button {
 .form .date.invalidDateMostrar{
     color:red;
     padding-top: 0.4rem;
-    font-size: 1rem; 
+    font-size: 0.89rem;
 }
 .form .date.invalidDateNaoMostrar{
     display: none;
